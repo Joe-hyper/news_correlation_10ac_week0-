@@ -1,9 +1,9 @@
 
-# Network Analysis Python Package
+# News Correlation Analysis Python Package
 
 ## Overview
 
-This Python package, `network_analysis`, is designed for conducting network analysis task. It provides tools and utilities to analyze network data, with a focus on handling Slack messages from a previous 10 Academy training program.
+This Python package, `news_analysis`, is designed for conducting newa analysis task. It provides tools and utilities to analyze news data, with a focus on handling Slack messages from a previous 10 Academy training program.
 
 ## What to do
 
@@ -91,15 +91,15 @@ Now, your virtual environment is created and activated. You can install packages
 
 ### Clone this package
 
-To install the `network_analysis` package, follow these steps:
+To install the `news_analysis` package, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/network_analysis.git
+    git clone https://github.com/your-username/news_analysis.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd network_analysis
+    cd news_analysis
     ```
  
 3. Install the required dependencies:
@@ -114,7 +114,7 @@ Please be aware that the existing requirements.txt file includes only a limited 
 Configure the package by modifying the `src/config.py` file. Adjust parameters such as file paths, API keys, or any other configuration settings relevant to your use case.
 
 ### Data Loading
-The package provides a data loader module (`loader.py`) in the src directory. Use this module to load your network data into a format suitable for analysis.
+The package provides a data loader module (`loader.py`) in the src directory. Use this module to load your news data into a format suitable for analysis.
 
 Example:
 
@@ -134,13 +134,13 @@ Explore the various utilities available in the `src/utils.py` module. This modul
 Example:
 
 ```python
-from src.utils import clean_data, visualize_network
+from src.utils import clean_data, visualize_news
 
 # Clean the loaded data
 cleaned_data = clean_data(slack_data)
 
-# Visualize the network
-visualize_network(cleaned_data)
+# Visualize the news
+visualize_news(cleaned_data)
 ```
 
 ## Testing
@@ -164,13 +164,13 @@ Contributions are welcome! Before contributing, please review our contribution g
 ##  License
 This project is licensed under the MIT License.
 
-## Network Analysis
+## news Analysis
 
 This is a starter python package to analze the slack data to learn about
 
 * Patter of users messaging behaviour
 * Patter of replies and reactions of users to messages posted both by peers and admins
-* Discover sub-communities by building network graphs of message senders and those who reply or react to those messages
+* Discover sub-communities by building news graphs of message senders and those who reply or react to those messages
 
 
 
