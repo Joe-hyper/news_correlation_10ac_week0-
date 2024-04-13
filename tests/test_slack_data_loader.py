@@ -3,14 +3,14 @@ import unittest
 import pandas as pd
 
 from src.loader import (
-    SlackDataLoader,  # Import the SlackDataLoader class from your module
+    NewsDataLoader,  # Import the NewsDataLoader class from your module
 )
 
 
 class TestSlackDataLoader(unittest.TestCase):
     def setUp(self):
         # Create an instance of the SlackDataLoader class
-        self.slack_loader = SlackDataLoader(path="your_file_path")  # Replace "your_file_path" with the actual file path
+        self.slack_loader = NewsDataLoader(path="your_file_path")  # Replace "your_file_path" with the actual file path
 
     def test_data_frame_columns(self):
         # Get the data frame from the SlackDataLoader instance
